@@ -109,9 +109,7 @@ a:hover{
 .banner_info .search_box .item{
     display: flex;
 }
-.banner_info .search_box .item .text{
-    
-}
+
 .banner_info .search_box .item .text select{
     width: 100%;
     border: none;
@@ -246,7 +244,6 @@ a:hover{
 }
 
 
-.popular_item .text{}
 .popular_item .text span.review{
     display: flex;
     align-items: center;

@@ -41,6 +41,22 @@ a:hover{
     line-height: 30px;
     color: var(--paragraph);
 }
+.common_btn{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--white);
+    background: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 16px;
+    text-align: center;
+    padding: 15px 34px;
+    transition: all linear .3s;
+}
+.common_btn:hover {
+    color: var(--primary);
+    background: transparent;
+}
 /* All Common css End */
 
 #navbar{
@@ -211,6 +227,7 @@ a:hover{
 /* popular part start */
 #popular{
     padding-top: 130px;
+    padding-bottom: 150px;
 }
 #popular .common_heading{
     margin: 0 auto;
@@ -218,7 +235,7 @@ a:hover{
 }
 .popular_item{
     padding: 21px;
-    margin: 0 12px;
+    margin: 20px 12px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -293,3 +310,139 @@ a:hover{
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
 }
 /* popular part end */
+
+/* go travels part start */
+#go_travels{
+    padding: 130px 0 150px;
+    background: rgba(30, 30, 30, 0.05);
+}
+.go_travels_text{
+    max-width: 516px;
+}
+.go_travels_text ul li {
+	display: flex;
+	gap: 10px;
+	padding-right: 145px;
+	margin-bottom: 10px;
+}
+.go_travels_text ul li span{
+    color: var(--paragraph);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: -8px;
+}
+.go_travels_right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 15px;
+}
+.go_travels_right .item{
+    padding: 62px 32px;
+    width: 270px;
+    /* background: var(--primary); */
+    border-radius: 17px;
+}
+.go_travels_right .item .icon{
+    width: 74px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 127, 95, 0.1);
+    border-radius: 14px;
+    padding: 22px 20px;
+}
+.go_travels_right .item .text{
+    padding-top: 20px;
+}
+.go_travels_right .item .text h4{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+    color: var(--heading);
+}
+.go_travels_right .item .text p{
+    font-size: 25px;
+    line-height: 37px;
+    letter-spacing: 0.2px;
+    color: var(--paragraph);
+}
+/* go travels part end */
+
+/* Destination part start */
+#destination{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.destination_image{
+    width: 570px;
+    position: relative;
+}
+
+.destination_image .image_1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 371px;
+    z-index: 10;
+}
+.destination_image .image_2{
+    position: absolute;
+    right: 0;
+    top: 188px;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 368px;
+    z-index: 20;
+    padding: 10px;
+    background: var(--white);
+    animation: image_2 2s linear infinite alternate;
+}
+.destination_image .image_1 img,
+.destination_image .image_2 img {
+    border-radius: 10px;
+}
+.destination_image .dots{
+    position: absolute;
+    right: 104px;
+    top: 98px;
+    width: 140px;
+    z-index: 5;
+    animation-name: dots;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes dots {
+    0%{
+        right: 104px;
+        top: 98px;
+    }
+    100%{
+        right: 98px;
+        top: 90px;
+    }
+}
+@keyframes image_2 {
+    0%{
+        right: 0;
+        top: 188px;
+    }
+    25%{
+        background: #007F5F;
+    }
+50%{
+        background: #246e0b;
+    }
+    100%{
+        top: 198px;
+    }
+}
+/* Destination part end */

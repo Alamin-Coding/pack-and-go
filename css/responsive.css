@@ -1,0 +1,64 @@
+:root{
+    --primary: #007F5F;
+    --heading: #1E1E1E;
+    --paragraph: #616161;
+    --review-color: #FF8B00;
+    --white: #fff;
+    --poppins: 'Poppins', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+}
+
+@media (max-width:575.98px) {
+    #navbar {
+        background: rgba(185, 185, 185, 0.596);
+    }
+    .navbar-brand img {
+        width: 56% !important;
+    }
+    .navbar-toggler i{
+        color: var(--heading);
+    }
+    .navbar-toggler svg{
+        color: var(--heading);
+    }
+    /* Banner part start */
+    .banner_info {
+        padding-right: 0;
+    }
+    .banner_info .info h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    #banner .overlay {
+        padding: 40px 0;
+    }
+    /* Banner part end */
+}
+
+
+
+@media (min-width:576px) and (max-width:767.98px) {
+    #navbar {
+        background: green;
+    }
+}
+@media (min-width:768px) and (max-width:991.98px) {
+    #navbar {
+        background: rgb(35, 134, 215);
+    }
+}
+@media (min-width:992px) and (max-width:1199.98px) {
+    #navbar {
+        background: rgb(55, 0, 128);
+    }
+}
+@media (min-width:1200px) and (max-width:1399.98px) {
+    #navbar {
+        background: rgb(128, 0, 119);
+    }
+}
+@media (min-width:1400px) {
+    #navbar {
+        /* background: green; */
+    }
+}

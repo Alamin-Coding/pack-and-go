@@ -174,7 +174,10 @@ button:focus,input:focus,textarea:focus{
     line-height: 24px;
 }
 /* Banner part Start */
-
+#banner{
+    /* background: url(../images/banner-BG.jpg) no-repeat center/cover;
+    background-attachment: fixed; */
+}
 #banner .overlay{
     padding: 134px 0;
     background: rgba(0, 0, 0, 0.4);
